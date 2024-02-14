@@ -5,10 +5,12 @@ import SignUp from "./pages/SignUp";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Sign-in" element={<Signin />} />
@@ -17,7 +19,7 @@ export default function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+     </BrowserRouter>
   );
 }
 
